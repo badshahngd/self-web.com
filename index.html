@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Front Page - Index</title>
+<style type="text/css">
+	*{
+		padding: 0px;
+		margin: 0px;
+	}
+	body{
+		background: white;
+	}
+	section{
+		width: 100%;
+		height: 110vh;
+	}
+
+	#home{
+		background: url(logos/1.jpg);
+		background-size: cover;
+	}
+	#contact{
+		height: 100%;
+		background: rgb(40,60,90);
+	}
+	nav{
+		width: 100%;
+		padding: .5rem 0rem;
+		background: rgba(0,0,0,0.4);
+		position: fixed;
+	}
+	#logos{
+		width: 100%;
+		height: 100%;
+	    display: inline-block;
+	}
+	#lft{
+		display: inline-block;
+		margin: .4rem 1rem;
+		padding: .4rem 1rem;
+		color: white;
+
+	}
+	.link{
+	   float: right;
+	   padding: 0px 1rem;
+	}
+	.link a{
+		text-decoration: none;
+		font-size: 1.3rem;
+		font-family: arial;
+		font-weight: bold;
+		padding: 0rem 1rem;
+		color: white;
+	}
+	.link a:hover{
+		transition:y.9s;
+		text-decoration: underline;
+
+	}
+	.contain{
+
+		padding: 1rem 1rem;
+		margin: 20% auto;
+		display: inline-block;
+
+
+	}
+	#m_con{
+		margin-left: 10%;
+	}
+	.contain h4{
+		font-size: 3rem;
+		color: darkcyan;
+		cursor: pointer;
+
+	}
+
+	.contain p{
+		font-size: 1.5rem;
+		color: white;
+		cursor: pointer;
+		font-weight: bold;
+
+	}
+	.contain u{
+		background: #3366dd;
+		padding: .2rem .5rem;
+	}
+
+	.text:after{
+		content: '';
+		animation: tech 10s infinite;
+		color: darkcyan;
+	}
+	@keyframes tech{
+
+		0%{
+		content:"PYTHON";
+	}
+	20%{
+		content:"PHP";
+	}
+	35%{
+		content:"HTML";
+	}
+	60%{
+		content:"CSS";
+	}
+	80%{
+		content:"JAVASCRIPT";
+	}
+	100%{
+		content:"JQUERY";
+	}
+	}
+
+	#btn_con button{
+		padding: .2rem 1rem;
+		border: none;
+		background: #3366ff;
+        color: white;
+        font-size: 1.2rem;
+        cursor: pointer;
+        border: .2rem solid lightblue;
+        margin: 1rem 2rem;
+        border-radius: .3rem;
+	}
+	#btn_con a{
+		text-decoration: none;
+		padding: .3rem 1rem;
+		border: none;
+		background: white;
+        color: #3366ff;
+        font-size: 1.2rem;
+        cursor: pointer;
+        border: .2rem solid #3366dd;
+        margin: 1rem 2rem;
+         border-radius: .3rem;
+	}
+
+	#btn_con a:hover{
+      transition: .9s;
+      color: white;
+      background: #3366ff;
+
+	}
+
+	#more{
+		background: orange;
+		height: 100%;
+	}
+	#more_cover{
+		position: relative;
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,0.4);
+	}
+    #more_cover h2{
+    	color: white;
+    	font-size: 2rem;
+    	font-family: sans-serif;
+    	word-spacing: 1rem;
+    }
+  
+  #boxes{
+  	display: inline-block;
+  	text-align: center;
+  	margin-left: 6%;
+  }
+   #box{
+   	margin: 10% auto;
+   	display: inline-block;
+   	width: 15rem;
+   	padding: 2rem 2rem;
+   	background: white;
+   	border-radius: .3rem;
+   	margin: 2rem 4rem;
+   }
+   #box:hover{
+   	box-shadow: .1rem .2rem .1rem .1rem gray;
+   }
+   #box img{
+   	width: 100%;
+   	height: 50%;
+   	border-radius: .2rem;
+   	cursor: pointer;
+
+   }
+
+   #box img:hover{
+   	width: 100%;
+   	height: 100%;
+   	border-radius: .2rem;
+   }
+
+
+
+   #box p{
+   	font-size: 1.2rem;
+   	font-weight: bold;
+   	cursor: pointer;
+   }
+   #box a{
+   	    text-decoration: none;
+		padding: .3rem .3rem;
+		border: none;
+		background: white;
+        color: #3366ff;
+        font-size: 1.2rem;
+        cursor: pointer;
+        border: .2rem solid #3366dd;
+        border-radius: .3rem;
+
+   }
+   #box a:hover{
+      transition: .9s;
+      color: white;
+      background: #3366ff;
+
+	}
+
+	.s_man_div{
+		display: inline-block;
+		margin-left: 6%;
+	}
+
+	#links{
+		text-align: center;
+		margin: 3% auto;
+		width: 13rem;
+		padding: 1rem 1rem;
+		background: white;
+		display: inline-block;
+		background: none;
+	}
+	#links li{
+		list-style: none;
+	}
+
+	#links h4{
+		color: white;
+		font-size: 1.4rem;
+		cursor: pointer;
+	}
+
+	#links a,li{
+		font-size: 1.2rem;
+		color: gray;
+		text-decoration: none;
+		font-family: sans-serif;
+
+	}
+	#links a:hover{
+		text-decoration: underline;
+	}
+
+
+
+
+
+
+</style>
+</head>
+<body>
+
+
+	<section id ="home">
+
+		<nav>
+			<div id ="logos">
+
+				<div id ="lft">
+					<h2>Badshahhhhh Nagod</h2>
+
+				</div>
+
+				<div id ="lft" class="link">
+					
+					<a href="#home">Home</a> <a href="#more">More</a>
+
+				</div>
+	
+			</div>
+
+
+		</nav>
+
+		<br>
+
+
+<div id ="m_con">
+	
+<div class ="contain">
+	
+<h4>Badshahh Nagod </h4>
+<br>
+<p><u>Web Developer & Designer</u></p>
+<br>
+<p>Front End & Back End both Written By</p>
+
+<p>Technology: <span class="text"></span></p>
+
+</div>
+<div class ="contain" id ="btn_con">
+	
+
+<form method="post"> <button>Sign UP</button> <a href="">About</a></form>
+
+
+</div>
+
+</div>
+
+
+
+
+	</section>
+
+	<section id ="more">
+		
+		<div id ="more_cover">
+
+			<br>
+
+			<center><h2>About More</h2></center>
+
+			<br>
+
+
+     
+         <div class="m_m_con">
+
+
+         	<div id="boxes">
+
+         		
+         		<div id ="box">
+
+         			<center><h3>Web Development</h3></center>
+
+         			<img src="logos/3.jpg">
+         			<br><p>
+         			Start Developing Your Own Professional Website with Wix's Advanced Tools. Get the Flexibility You Need to Create Without Limits and Stand Out Online</p>
+         			<br>
+
+         			<a href="">Learn More</a>
+                  
+                   <br>
+         			
+
+
+         		</div>
+
+         		<div id ="box">
+
+         			<center><h3>App Development</h3></center>
+
+         			<img src="logos/4.jpg">
+         			<br><p>
+         			Build Native Mobile Apps At Lightning Speed. Code Faster. Improve Quality. Reduce Costs. Schedule a Demo Call & Creating Something Exceptional. Mobile applications have become big business </p>
+         			<br>
+
+         			<a href="">Learn More</a>
+                  
+                   <br>
+         			
+
+         		</div>
+
+         		<div id ="box">
+
+         			<center><h3>Hotel Management</h3></center>
+
+         			<img src="logos/5.jpg">
+         			<br><p>Hotel Management System is a web-based application that allows the hotel manager to handle all hotel activities online. ... Hotel management project provides room booking
+         			</p>
+         			<br>
+
+         			<a href="">Learn More</a>
+                  
+                   <br>
+         			
+
+         		</div>
+
+         		<div id ="box">
+
+         			<center><h3>Flight Booking</h3></center>
+
+         			<img src="logos/6.jpg">
+         			<br><p>Online Flight Reservation System is a web application that helps the commuters to book flight ticket online.  the commuter has to register himself by filling up the details
+         			</p>
+         			<br>
+
+         			<a href="">Learn More</a>
+                  
+                   <br>
+         			
+
+         		</div>
+
+
+
+
+
+         	</div>
+           
+          </div>
+
+
+
+		</div>
+		
+
+	</section>
+
+ <section id ="contact">
+
+ 	<br>
+
+
+
+
+ <div id ="man_div">
+ 	
+
+
+
+ 	<div class="s_man_div">
+
+
+ 		<div id ="links">
+
+ 			<h4>Quick Links</h4>
+     <br>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">FAQ</a></li>
+
+ 		</div>
+
+ 		<div id ="links">
+ 			<h4>Services</h4>
+     <br>
+    <li><a href="">Flight book</a></li>
+    <li><a href="">Hotel book</a></li>
+    <li><a href="">Time supports</a></li>
+
+ 			
+ 		</div>
+
+ 		<div id ="links">
+ 			
+       <h4>Social</h4>
+     <br>
+    <li><a href="">Facebook F+</a></li>
+    <li><a href="">Twiter T+</a></li>
+    <li><a href="">Instagram I</a></li>
+
+ 		</div>
+
+ 		<div id ="links">
+
+         <h4>Contact & Support</h4>
+     <br>  
+      <li>Email : badshahngd@gmail.com </li>
+
+      <li>Help :1800 2352 2000 </li>
+
+ 		</div>
+
+
+
+
+
+ 	</div>
+
+
+ </div>
+
+ 	
+
+
+ </section>
+
+ <p style="text-align: center; background: rgba(0, 0, 0, 0.7); color: white; padding: .4rem 0rem; font-size: 1.2rem;">@Copyright Webpage project 2021 by BADSHAHHH.....</p>
+
+
+
+
+</body>
+</html>
